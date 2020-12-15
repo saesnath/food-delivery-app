@@ -132,9 +132,7 @@ class _MainScreenState extends State<MainScreen> {
               title: Text("Home"),
             ),
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.explore,
-              ),
+              icon: Icon(Icons.explore, rhj),
               title: Text("Explore"),
             ),
             BottomNavigationBarItem(
