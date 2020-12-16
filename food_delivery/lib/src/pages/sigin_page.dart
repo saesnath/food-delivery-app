@@ -99,7 +99,7 @@ class _SignInPage extends State<SignInPage> {
                       "Forgotten Password?",
                       style: TextStyle(
                         fontSize: 18.0,
-                        color: Colors.blueAccent,
+                        color: Colors.redAccent,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -149,7 +149,7 @@ class _SignInPage extends State<SignInPage> {
                       child: Text(
                         "Sign up",
                         style: TextStyle(
-                            color: Colors.blueAccent,
+                            color: Colors.redAccent,
                             fontWeight: FontWeight.bold,
                             fontSize: 18.0),
                       ),
@@ -185,7 +185,7 @@ class _SignInPage extends State<SignInPage> {
       authenticate(_email, _password).then((final response) {
         if (!response['hasError']) {
           Navigator.of(context).pop();
-          Navigator.of(context).pushReplacementNamed("/mainscreen");
+          Navigator.of(context).pushReplacementNamed('mainscreen');
         } else {
           Navigator.of(context).pop();
           _scaffoldKey.currentState.showSnackBar(

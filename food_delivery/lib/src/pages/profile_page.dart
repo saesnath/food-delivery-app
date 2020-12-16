@@ -68,7 +68,7 @@ class _ProfilePage extends State<ProfilePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            "${userInfo.username}",
+                            "{userInfo.username}",
                             style: TextStyle(
                               fontSize: 16.0,
                             ),
@@ -77,7 +77,7 @@ class _ProfilePage extends State<ProfilePage> {
                             height: 10.0,
                           ),
                           Text(
-                            "${userInfo.email}",
+                            "{userInfo.email}",
                             style: TextStyle(color: Colors.grey),
                           ),
                           SizedBox(

@@ -14,7 +14,7 @@ class CustomListTile extends StatelessWidget {
         children: <Widget>[
           Icon(
             icon,
-            color: Colors.blue,
+            color: Colors.redAccent,
           ),
           SizedBox(
             width: 15.0,

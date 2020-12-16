@@ -21,7 +21,7 @@ class _SignUpPageState extends State<SignUpPage> {
   String _email;
   String _username;
   String _password;
-  // String _confirmPassword;
+  //String _confirmPassowrd;
 
   GlobalKey<FormState> _formKey = GlobalKey();
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
@@ -108,6 +108,40 @@ class _SignUpPageState extends State<SignUpPage> {
     );
   }
 
+  /* Widget _buildConfirmPasswordTextField() {
+    return TextFormField(
+      decoration: InputDecoration(
+        hintText: "confirm password",
+        hintStyle: TextStyle(
+          color: Color(0xFFBDC2CB),
+          fontSize: 18.0,
+        ),
+        suffixIcon: IconButton(
+          onPressed: () {
+            setState(() {
+              _toggleVisibility = !_toggleVisibility;
+            });
+          },
+          icon: _toggleVisibility
+              ? Icon(Icons.visibility_off)
+              : Icon(Icons.visibility),
+        ),
+      ),
+      obscureText: _toggleVisibility,
+      onSaved: (String confirmPassowrd) {
+        _confirmPassowrd = confirmPassowrd;
+      },
+      validator: (String confirmPassowrd) {
+        String errorMessage;
+
+        if (confirmPassowrd.isEmpty) {
+          errorMessage = "Your confirmPassowrd is required";
+        }
+        return errorMessage;
+      },
+    );
+  }*/
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -147,6 +181,10 @@ class _SignUpPageState extends State<SignUpPage> {
                           height: 20.0,
                         ),
                         _buildPasswordTextField(),
+                        // SizedBox(
+                        //  height: 20.0,
+                        // ),
+                        //_buildConfirmPasswordTextField(),
                       ],
                     ),
                   ),
@@ -177,7 +215,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       child: Text(
                         "Sign In",
                         style: TextStyle(
-                            color: Colors.blueAccent,
+                            color: Colors.redAccent,
                             fontWeight: FontWeight.bold,
                             fontSize: 18.0),
                       ),
@@ -203,7 +241,8 @@ class _SignUpPageState extends State<SignUpPage> {
         child: Container(
           height: 50.0,
           decoration: BoxDecoration(
-              color: Colors.blue, borderRadius: BorderRadius.circular(25.0)),
+              color: Colors.redAccent,
+              borderRadius: BorderRadius.circular(25.0)),
           child: Center(
             child: Text(
               "Sign Up",
@@ -236,7 +275,7 @@ class _SignUpPageState extends State<SignUpPage> {
         if (!response['hasError']) {
           // Todo - Navigate to the homepage
           Navigator.of(context).pop();
-          Navigator.of(context).pushNamed("/mainscreen");
+          Navigator.of(context).pushNamed('mainscreen');
         } else {
           // todo - display the error message in the snackbar
           Navigator.of(context).pop();

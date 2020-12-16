@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "Food Delivery App",
-        theme: ThemeData(primaryColor: Colors.blueAccent),
+        theme: ThemeData(primaryColor: Colors.redAccentAccent),
         routes: {
           "/": (BuildContext context) => SignInPage(),
           "/mainscreen": (BuildContext context) => MainScreen(

@@ -60,11 +60,11 @@ class FoodItemCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      "\u{20B5} $price",
+                      "lkr $price",
                       style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.bold,
-                          color: Colors.blue),
+                          color: Colors.redAccent),
                     ),
                     SmallButton(btnText: "Buy"),
                   ],

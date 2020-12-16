@@ -10,7 +10,7 @@ class Button extends StatelessWidget {
     return Container(
       height: 50.0,
       decoration: BoxDecoration(
-          color: Colors.blue, borderRadius: BorderRadius.circular(25.0)),
+          color: Colors.redAccent, borderRadius: BorderRadius.circular(25.0)),
       child: Center(
         child: Text(
           "$btnText",

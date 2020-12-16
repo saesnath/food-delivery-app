@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class SmallButton extends StatelessWidget {
-
   final String btnText;
 
   SmallButton({this.btnText});
@@ -13,13 +12,13 @@ class SmallButton extends StatelessWidget {
       width: 60.0,
       decoration: BoxDecoration(
           border: Border.all(
-            color: Colors.blue,
+            color: Colors.redAccent,
           ),
           borderRadius: BorderRadius.circular(20.0)),
       child: Center(
         child: Text(
           "$btnText",
-          style: TextStyle(color: Colors.blue, fontSize: 16.0),
+          style: TextStyle(color: Colors.redAccent, fontSize: 16.0),
         ),
       ),
     );
