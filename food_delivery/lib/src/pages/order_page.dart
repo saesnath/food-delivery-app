@@ -27,7 +27,7 @@ class _OrderPage extends State<OrderPage> {
 
   Widget _buildTotalContainer() {
     return Container(
-      height: 220.0,
+      height: 200.0,
       padding: EdgeInsets.only(
         left: 10.0,
         right: 10.0,
@@ -130,7 +130,7 @@ class _OrderPage extends State<OrderPage> {
             ],
           ),
           SizedBox(
-            height: 20.0,
+            height: 50.0,
           ),
           GestureDetector(
             onTap: () {

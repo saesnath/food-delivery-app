@@ -7,5 +7,6 @@ class User {
     this.id,
     this.token,
     this.email,
+    userType,
   });
 }
